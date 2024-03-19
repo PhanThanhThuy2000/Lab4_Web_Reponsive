@@ -1,0 +1,49 @@
+body {
+    background: #36B87D;
+}
+
+.item {
+    background: #BCE2C9;
+    min-height: 50px;
+    border: 1px solid #000;
+    min-height: 50px;
+    /* lấy flex*/
+    display: flex;
+    /* căn các item theo chiều cao */
+    align-items: center;
+    /* căn các item theo chiều ngang */
+    justify-content: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.container {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header" "menu content content" "menu footer footer";
+    /* tạo khoảng cách giữa các cột item 10 px  */
+    column-gap: 15px;
+    /* tạo khoảng cách giữa các hàng item 10 px  */
+    row-gap: 15px;
+}
+
+.Header {
+    grid-area: header;
+}
+
+.Menu {
+    grid-area: menu;
+}
+
+.content {
+    display: grid;
+    grid-area: content;
+    /* chia kich thuoc theo chieu dọc */
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.Footer {
+    grid-area: footer;
+}

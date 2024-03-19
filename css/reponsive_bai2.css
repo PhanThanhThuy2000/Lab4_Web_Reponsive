@@ -1,0 +1,23 @@
+/* mobile */
+
+@media(max-width: 740px) {
+    .container {
+        /* chỉnh giao diẹn */
+        grid-template-areas: "header header header" "menu menu menu" "content content content" "footer footer footer";
+    }
+    .content {
+        /* cac item con chiếm 1 hàng */
+        grid-template-columns: 1fr;
+        /* cạch các hàng */
+        row-gap: 10px;
+    }
+}
+
+
+/* tablet */
+
+@media(min-width: 740px) and (max-width: 1023px) {
+    .container {
+        grid-template-areas: "header header header" "menu menu menu" "content content content" "footer footer footer";
+    }
+}
